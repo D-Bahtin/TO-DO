@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TODO</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+	<script src="controls.js" type="module"></script>
+</head>
+
+<body>
+	<div class="todo">
+		<form class="todo__form">
+			<div class="todo__box">
+				<div class="todo__title">HIGH</div>
+				<div class="todo__input-holder">
+					<input class="todo__input" type="text" placeholder="Добавить важных дел" data-priority="high">
+					<button class="todo__add-task" type="submit"></button>
+				</div>
+				<ul class="todo__list" data-tasks="high-priority"></ul>
+			</div>
+			<div class="todo__box">
+				<div class="todo__title">LOW</div>
+				<div class="todo__input-holder">
+					<input class="todo__input" type="text" placeholder="Добавить" data-priority="low">
+					<button class="todo__add-task" type="submit"></button>
+				</div>
+				<ul class="todo__list" data-tasks="low-priority"></ul>
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>
